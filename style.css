@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    max-height: 1vh;
+    background-color: hsl(204, 43%, 93%);
+    
+}
+
+.container{
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+.top{
+    max-width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 40px;
+    background-color: white;
+    align-items: center;
+}
+h1{
+    color: hsl(179, 62%, 43%);
+    margin: 0;
+}
+p{
+    color: hsl(218, 22%, 67%);
+    margin-bottom: 0;
+    line-height: 25px;
+}
+p.money-back{
+    color: rgb(192, 223, 52);
+    font-weight: 700;
+}
+.bottom{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    color: white;
+}
+.bottom-left{
+    width: 50%;
+    padding: 40px;
+    background-color: hsl(179, 62%, 43%);
+    border-bottom-left-radius: 10px;
+}
+.bottom-right{
+    width: 50%;
+    padding: 40px;
+    background-color: #4cbcbe;
+    border-bottom-right-radius: 10px;
+}
+.bottom-left p{
+    color: white;
+    letter-spacing: 1px;
+}
+.price{
+    display: flex;
+}
+p.dollar{
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+    margin-top: 20px;
+}
+p.month{
+    color: #8be7eb;
+    padding-left:10px;
+    padding-top: 3px;
+}
+.bottom h1{
+    font-size: 20px;
+    color: white;
+}
+.bottom-right p{
+    color: #cdfdff;
+    padding-right: 72px;
+
+}
+button{
+    margin-top: 40px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(192, 223, 52);
+    border: none;
+    padding: 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.288);
+}
+
+@media screen and (max-width: 782px){
+    .container{
+        margin-top: 60px;
+        width: 80%;
+        margin-bottom: 60px;
+    }
+    .bottom{
+        display: flex;
+        flex-direction: column;
+    }
+    .bottom-left{
+        width: auto;
+        border-bottom-left-radius: 0px;
+    }
+    .bottom-right{
+        width: auto;
+        border-bottom-left-radius: 10px;
+    }
+}
